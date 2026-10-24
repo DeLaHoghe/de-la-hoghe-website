@@ -12,6 +12,6 @@ nav{flex-wrap:wrap;gap:14px 24px}nav a[aria-current="page"]{color:var(--wine);te
 
 /* Clearer engraved emblem for the home hero. Inner-page heroes retain their quieter treatment. */
 .hero:not(.page-hero) .wrap{background:linear-gradient(90deg,var(--wine) 0%,var(--wine) 50%,#5b2031 100%)}
-.hero:not(.page-hero) .hero-emblem{width:730px;right:max(-125px,calc((100vw - 1100px)/2 - 185px));top:50%;filter:none;mix-blend-mode:normal;opacity:.43}
+.hero:not(.page-hero) .hero-emblem{width:730px;right:max(-125px,calc((100vw - 1100px)/2 - 185px));top:50%;transform:translateY(-50%) perspective(1000px) rotateY(15deg) rotateZ(-3deg) scale(1.03);transform-origin:50% 50%;filter:drop-shadow(13px 15px 5px rgba(25,5,13,.55));mix-blend-mode:normal;opacity:.46}
 @media(min-width:701px) and (max-width:1000px){.hero:not(.page-hero) .hero-emblem{width:610px;right:-170px;opacity:.35}}
 @media(max-width:700px){.hero:not(.page-hero) .wrap{background:var(--wine)}.hero:not(.page-hero) .hero-emblem{width:465px;right:-260px;top:51%;opacity:.22}}
