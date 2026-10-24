@@ -13,4 +13,4 @@ Import this repository, choose the main branch, leave the build command empty, a
 - Meetings and visits
 - Joining and enquiries
 
-The enquiry form opens a prepared message in the visitor’s email application; it does not send emails automatically or store submissions.
+The enquiry form uses Netlify Forms. After deployment, enable form detection in Netlify and verify that the joining-enquiry form is listed. Configure email notifications privately in Netlify if required. No recipient email address is stored in this repository.
