@@ -19,3 +19,8 @@ nav{flex-wrap:wrap;gap:14px 24px}nav a[aria-current="page"]{color:var(--wine);te
 @font-face{font-family:'Cormorant Garamond';src:url('/assets/cormorant-garamond-semibold.ttf') format('truetype');font-style:normal;font-weight:600;font-display:swap}
 .hero:not(.page-hero) h1{font-family:'Cormorant Garamond',Georgia,serif;font-weight:600;letter-spacing:-1.5px}
 .hero:not(.page-hero) h1 span{font-family:Georgia,'Times New Roman',serif;font-weight:normal;letter-spacing:0}
+
+/* Comfortable navigation and content widths on tablets and phones. */
+@media(min-width:701px) and (max-width:1000px){header .wrap{flex-wrap:wrap;padding-top:18px;padding-bottom:18px;gap:12px 24px}nav{gap:10px 22px}nav a{padding:7px 0}.hero:not(.page-hero) .hero-emblem{width:570px;right:-190px;opacity:.27}}
+@media(max-width:700px){nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 14px;margin-top:18px}nav a{display:block;padding:7px 0;font-size:14px;line-height:1.4}.hero:not(.page-hero) .hero-emblem{width:420px;right:-235px;opacity:.18}.hero:not(.page-hero) h1{font-size:clamp(44px,12vw,58px);letter-spacing:-.8px}.path-grid{gap:18px}}
+@media(max-width:360px){.wrap{padding-left:20px;padding-right:20px}.hero:not(.page-hero) .wrap{padding-left:20px;padding-right:20px}.page-hero .wrap{padding-left:20px;padding-right:20px}nav{gap:2px 9px}nav a{font-size:13px}}
