@@ -24,3 +24,9 @@ nav{flex-wrap:wrap;gap:14px 24px}nav a[aria-current="page"]{color:var(--wine);te
 @media(min-width:701px) and (max-width:1000px){header .wrap{flex-wrap:wrap;padding-top:18px;padding-bottom:18px;gap:12px 24px}nav{gap:10px 22px}nav a{padding:7px 0}.hero:not(.page-hero) .hero-emblem{width:570px;right:-190px;opacity:.27}}
 @media(max-width:700px){nav{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:2px 14px;margin-top:18px}nav a{display:block;padding:7px 0;font-size:14px;line-height:1.4}.hero:not(.page-hero) .hero-emblem{width:420px;right:-235px;opacity:.18}.hero:not(.page-hero) h1{font-size:clamp(44px,12vw,58px);letter-spacing:-.8px}.path-grid{gap:18px}}
 @media(max-width:360px){.wrap{padding-left:20px;padding-right:20px}.hero:not(.page-hero) .wrap{padding-left:20px;padding-right:20px}.page-hero .wrap{padding-left:20px;padding-right:20px}nav{gap:2px 9px}nav a{font-size:13px}}
+
+/* Join the membership guidance and enquiry form without stacked section gaps. */
+.joining-page section.content{padding-bottom:28px}
+.joining-page .contact{padding-top:24px}
+.joining-page .contact .grid{align-items:start}
+@media(max-width:700px){.joining-page section.content{padding-bottom:20px}.joining-page .contact{padding-top:16px}}
