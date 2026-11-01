@@ -30,3 +30,8 @@ nav{flex-wrap:wrap;gap:14px 24px}nav a[aria-current="page"]{color:var(--wine);te
 .joining-page .contact{padding-top:24px}
 .joining-page .contact .grid{align-items:start}
 @media(max-width:700px){.joining-page section.content{padding-bottom:20px}.joining-page .contact{padding-top:16px}}
+
+/* Chapter shield beside the name in the cream site header. */
+header .brand{position:relative;padding-left:74px;min-height:66px;display:flex;flex-direction:column;justify-content:center}
+header .brand::before{content:"";position:absolute;left:0;top:50%;transform:translateY(-50%);width:60px;height:66px;background:url('/assets/de-la-hoghe-shield.png') center/contain no-repeat;mix-blend-mode:multiply;pointer-events:none}
+@media(max-width:700px){header .brand{padding-left:63px;min-height:58px}header .brand::before{width:50px;height:58px}header .brand small{font-size:9px;letter-spacing:1.6px;line-height:1.5}}
